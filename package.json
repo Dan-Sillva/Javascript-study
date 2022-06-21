@@ -1,0 +1,19 @@
+{
+  "name": "curso",
+  "version": "1.0.0",
+  "description": "",
+  "main": "aula.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watchAll --passWithNoTests",
+    "test:coverage": "jest --coverage --passWithNoTests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^28.1.2",
+    "jest": "^28.1.1"
+  }
+}
