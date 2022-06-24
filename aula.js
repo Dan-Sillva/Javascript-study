@@ -1,21 +1,15 @@
-let test = 'salve salve'
+function repeat(number) {
+    var string = ''
+    
+    if(number === 1){
+        // console.log('chunk')
+        string +='chunk'
+    } else if (number > 1 ){
+        // console.log('chunk-')
+        string += 'chunk-' + repeat(number - 1)  
+    } else {
+        return null
+    }
 
-let pessoa1 = {
-    nome:'Danilo',
-    idade:16
+    return string
 }
-
-let pessoa2 = {
-    nome:'Santos',
-    idade:13
-}
-
-let lista =[pessoa1, pessoa2]
-
-function comparar(pessoa1, pessoa2){
-    return pessoa1.idade < pessoa2.idade ? (pessoa2.nome + ' é mais velha') : (pessoa1.nome + ' é mais velha')
-}
-
-console.log(lista)
-console.log(comparar(pessoa1, pessoa2))
-

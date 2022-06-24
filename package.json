@@ -1,7 +1,6 @@
 {
   "name": "curso",
   "version": "1.0.0",
-  "description": "",
   "main": "aula.js",
   "type": "module",
   "scripts": {
@@ -13,7 +12,16 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/jest": "^28.1.2",
+    "@types/jest": "^28.1.3",
     "jest": "^28.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dan-Sillva/Javascript-study.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Dan-Sillva/Javascript-study/issues"
+  },
+  "homepage": "https://github.com/Dan-Sillva/Javascript-study#readme",
+  "description": ""
 }
