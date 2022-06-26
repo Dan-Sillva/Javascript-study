@@ -1,4 +1,4 @@
-const { sumMultiples } = require('./sumex')
+import { sumMultiples } from './sumex'
 
 describe('Teste de soma para todos os os divisiveis de 3 ou 5 dentro de um range', () => {
     it('espera-se a soma dos valores divisiveis por 3 ou 5', () => {

@@ -6,9 +6,7 @@
 90 - 100 : A
 */
 
-module.exports.mediaNota = mediaNota
-
-function mediaNota () {
+export function mediaNota () {
     var media = 0
     let obj = {}
 

@@ -1,4 +1,4 @@
-const { valueSpec } = require('./valueSpec')
+import { valueSpec } from './valueSpec'
 
 describe('Teste de definição de valor par ou impar dentro de um range', () => {
     it('somente com um argumento', () => {

@@ -1,4 +1,4 @@
-const {fizzBuzz} = require('./fizzbuzz')
+import {fizzBuzz} from './fizzbuzz'
 
 describe('Testes com valores não numéricos', () => {
     it('recebendo um booleano', () => {

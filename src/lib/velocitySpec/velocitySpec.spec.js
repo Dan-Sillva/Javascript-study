@@ -1,4 +1,4 @@
-const { specVel } = require('./velocitySpec')
+import { specVel } from './velocitySpec'
 
 describe('Teste com valor não numerico', () => {
     it('espera-se não numerico para string ', () => {

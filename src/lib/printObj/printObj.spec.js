@@ -1,4 +1,4 @@
-const { PrintObj } = require('./printObj')
+import { printObj } from './printObj'
 
 describe('Teste de print para atributos tipo string', () => {
     it('espera-se a impressão apenas de atributos do tipo string', () => {
@@ -9,7 +9,7 @@ describe('Teste de print para atributos tipo string', () => {
             skills: 'JS, Jest, HTML, CSS'
         }
 
-        expect(PrintObj(obj))
+        expect(printObj(obj))
         .toBe('name:[Danilo Araujo Silva]; skills:[JS, Jest, HTML, CSS]; ')
     });
 
@@ -19,7 +19,7 @@ describe('Teste de print para atributos tipo string', () => {
             studant: true
         }
 
-        expect(PrintObj(obj))
+        expect(printObj(obj))
         .toBe('')
     });
 })

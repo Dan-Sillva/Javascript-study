@@ -4,12 +4,10 @@ const test = {
     skill: 'JS, Jest, HTML, CSS'
 }
 
-module.exports.PrintObj = printObj
-
-function printObj(obj) {
+export function printObj(obj) {
     var string = ''
 
-    for (props in obj){
+    for (let props in obj){
         if (typeof obj[props] === 'string'){
             string += props + ':[' + obj[props] + ']; '
         }

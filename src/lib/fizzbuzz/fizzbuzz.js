@@ -1,6 +1,4 @@
-module.exports.fizzBuzz = fizzBuzz
-
-function fizzBuzz(req){
+export function fizzBuzz(req){
     var res = ''
 
     if (typeof(req) === 'number'){

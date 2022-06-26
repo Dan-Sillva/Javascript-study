@@ -1,6 +1,4 @@
-module.exports.valueSpec = valueSpec
-
-function valueSpec(){
+export function valueSpec(){
     var string = ''
 
     if (arguments.length === 2) {

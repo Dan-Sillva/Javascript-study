@@ -1,6 +1,4 @@
-module.exports.specVel = specVel
-
-function specVel(req) {
+export function specVel(req) {
     var res = {}
 
     if (typeof(req) === 'number'){

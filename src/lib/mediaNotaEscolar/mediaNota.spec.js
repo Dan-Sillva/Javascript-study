@@ -1,4 +1,4 @@
-const { mediaNota } = require('./mediaNota')
+import { mediaNota } from './mediaNota'
 
 describe('Testando media da nota e verificando status de retorno', () => {
     it('espera-se status F para notas abaixo de 60', () => {
