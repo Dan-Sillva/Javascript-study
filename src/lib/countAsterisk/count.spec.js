@@ -1,4 +1,4 @@
-import { cont } from './cont'
+import { cont } from './count'
 
 describe('Teste de contatem de asteriscos', () => {
     it('espera-se que nenhum asterisco seja exibido', () => {
