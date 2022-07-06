@@ -1,10 +1,10 @@
 /*
- *	Funcões de Fabrica(Factory Function)
+ *	Funcões de Construção(Constructor Function)
  *
- *	Em JS, pode ser considerada como uma fabrica de objetos json.
- *	
- *	Nesse caso, irei criar uma fabrica que cria objetos de pessoas com nome, idade e habilidades diferentes,
- *	mas que estão na mesma cidade e estado.
+ *	Em JS, pode ser considerada uma forma de criar um objeto utilizando o new.
+ *	Vou refatorar o código do ultimo commit para substituir a factory function por uma
+ *	constructor function.
+ *
  */
 
 const result = []
@@ -20,20 +20,20 @@ const skillsList = [
 	['RUBY', 'MYSQL', 'PYTHON', 'JAVA']
 ]
 
-function personFactory(name, age, skills){
-	return {
-		name,
-		age,
-		city: 'Unai',
-		state: 'MG',
-		skills,
+function Person (name, age, skills){
+	
+	this.name = name,
+	this.age = age,
+	this.city = 'Unai',
+	this.state = 'MG',
+	this.skills = skills	
 
-		status: () => {console.log('create person...')} 
-	} 
+	this.status = () => {console.log('create person...')}  
 }
 
 for(let i = 0; i < personList.length; i++){
-	result.push(personFactory(personList[i][0], personList[i][1], skillsList[personList[i][2]]))
+	const person = new Person(personList[i][0], personList[i][1], skillsList[personList[i][2]])
+	result.push(person)
 }
 
 console.table(result)
