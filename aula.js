@@ -1,40 +1,48 @@
 /*
- *	Funcões de Construção(Constructor Function)
+ *	Manipulação de Objeto em JS(assign and spread)
  *
- *	Em JS, pode ser considerada uma forma de criar um objeto utilizando o new.
- *	Vou refatorar o código do ultimo commit para substituir a factory function por uma
- *	constructor function.
+ *	Aqui vou demonstrar um pouco da utilização de assign e spread para duplicação de
+ *	um objeto, além de demonstrar a propriedade de maleabilidade do objeto.
  *
  */
 
-const result = []
-
-const personList = [
-	['Romario',12, 0],
-	['Alexander', 32, 1],
-	['Jonathan Joestar', 17, 0]
-]
-
-const skillsList = [
-	['JS', 'HTML', 'CSS', 'VUE'],
-	['RUBY', 'MYSQL', 'PYTHON', 'JAVA']
-]
-
-function Person (name, age, skills){
-	
-	this.name = name,
-	this.age = age,
-	this.city = 'Unai',
-	this.state = 'MG',
-	this.skills = skills	
-
-	this.status = () => {console.log('create person...')}  
+const objeto = {
+	name: 'Danilo',
+	age: 20 
 }
 
-for(let i = 0; i < personList.length; i++){
-	const person = new Person(personList[i][0], personList[i][1], skillsList[personList[i][2]])
-	result.push(person)
-}
+// objetos são maleaveis, isso significar que mesmo declarados como constantes, podem ter
+// propriedades alteradas
 
-console.table(result)
+console.log('Objeto inicialmente: ')
+console.table(objeto)
+
+// agora, irei adicionar uma nova propriedade, remover uma existente e editar outra
+
+objeto.skill = 'QA'
+delete objeto.age
+objeto.name = 'Danilo Araujo'
+
+console.log('Objeto após alteração: ')
+console.table(objeto)
+
+// agora, irei copiar o objeto utilizando assingn, adicionando uma propriedade, e também utilizando
+// spread
+
+const objeto2 = Object.assign({
+	newAge: 22
+}, objeto)
+
+const objeto3 = {...objeto}
+
+console.log('Objeto2 (assing) ')
+console.table(objeto2)
+
+console.log('Objeto3 (spread) ')
+console.table(objeto3)
+
+
+
+
+
 
