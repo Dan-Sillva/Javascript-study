@@ -1,5 +1,5 @@
 {
-  "name": "curso",
+  "name": "c",
   "version": "1.0.0",
   "main": "aula.js",
   "type": "module",
@@ -14,9 +14,9 @@
   "devDependencies": {
     "@babel/core": "^7.18.5",
     "@babel/preset-env": "^7.18.2",
-    "@types/jest": "^28.1.3",
+    "@types/jest": "^28.1.5",
     "babel-jest": "^28.1.1",
-    "jest": "^28.1.1"
+    "jest": "^28.1.3"
   },
   "repository": {
     "type": "git",
