@@ -18,5 +18,3 @@ export function primeFinder(range){
 
     return array
 }
-
-console.table(primeFinder(15))
